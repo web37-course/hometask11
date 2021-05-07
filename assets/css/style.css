@@ -1,0 +1,51 @@
+
+
+.main-image {
+    height: 350px;
+    object-fit: cover;
+}
+
+.dog-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-bottom: 40px;
+    padding-top: 5px;
+    text-align: center;
+    margin-top: 5px;
+    grid-template-rows: 200px;
+}
+
+.dog-categories > div {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+.toys {
+    background-image: url(../img/background-toys.jpg);
+}
+
+.food {
+    background-image: url(../img/background-food.jpg);
+}
+
+.clothes {
+    background-image: url(../img/background-clothes.jpg);
+}
+
+.featured-goods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.card {
+    border: white;
+    transition: 0.5s;
+}
+
+.card:hover {
+    border: grey;
+    box-shadow: 0 0 20px grey;
+}
