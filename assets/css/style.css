@@ -49,3 +49,32 @@
     border: grey;
     box-shadow: 0 0 20px grey;
 }
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    grid-template-rows: repeat (2, auto);
+    grid-template-areas: "main main main main"
+                         "info cust extr acc";
+}
+
+.main-contact {
+    grid-area: main;
+}
+
+.information {
+    grid-area: info;
+}
+
+.customer-service {
+    grid-area: cust;
+}
+
+.extras {
+    grid-area: extr;
+}
+
+.account {
+    grid-area: acc;
+}
