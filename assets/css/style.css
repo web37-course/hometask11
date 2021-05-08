@@ -54,7 +54,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
-    grid-template-rows: repeat (2, auto);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas: "main main main main"
                          "info cust extr acc";
 }
@@ -78,3 +78,18 @@
 .account {
     grid-area: acc;
 }
+
+.food, .toys, .clothes {
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.food:hover, .toys:hover, .clothes:hover {
+    font-size: 25px;
+    text-shadow: 1px 1px 5px red;
+}
+
+.btn-check:focus+.btn-outline-secondary, .btn-outline-secondary:focus {
+    box-shadow: none;
+}
+
